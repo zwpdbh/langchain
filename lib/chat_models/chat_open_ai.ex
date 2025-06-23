@@ -324,6 +324,7 @@ defmodule LangChain.ChatModels.ChatOpenAI do
     |> cast(attrs, @create_fields)
     |> common_validation()
     |> apply_action(:insert)
+    |> IO.inspect(lable: "ChatOpenAI -- new")
   end
 
   @doc """
